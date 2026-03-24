@@ -6,10 +6,17 @@ import {
   FaPhoneSquareAlt,
   FaYoutube,
 } from 'react-icons/fa';
-import { FaXTwitter, FaArrowRight } from 'react-icons/fa6';
+import { FaXTwitter } from 'react-icons/fa6';
 import { FiSend } from 'react-icons/fi';
 
 export default function Contact() {
+  const socialLinks = [
+    { Icon: FaFacebookF, href: 'https://www.facebook.com/' },
+    { Icon: FaXTwitter, href: 'https://twitter.com/' },
+    { Icon: FaYoutube, href: 'https://www.youtube.com/' },
+    { Icon: FaDribbble, href: 'https://dribbble.com/' },
+  ];
+
   return (
     <section className="pt-24 pb-24 max-w-[1140px] mx-auto px-4 font-outfit relative overflow-hidden">
       {/* Decorative Background Accents */}
@@ -48,10 +55,10 @@ export default function Contact() {
           </div>
 
           <div className="flex gap-x-5 px-4">
-            {[FaFacebookF, FaXTwitter, FaYoutube, FaDribbble].map((Icon, index) => (
+            {socialLinks.map(({ Icon, href }, index) => (
               <a 
                 key={index}
-                href="#" 
+                href={href} 
                 target="_blank" 
                 rel="noreferrer" 
                 className="w-11 h-11 flex items-center justify-center rounded-full bg-container-color text-title-color hover:bg-first-color hover:text-white transition-all duration-500 shadow-md hover:shadow-xl hover:-translate-y-1.5"

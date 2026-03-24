@@ -9,8 +9,6 @@ export default function Home() {
   const [charIndex, setCharIndex] = useState(0);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
-  const roles = ["MERN Stack Developer", "Web Developer", "React Native Developer"];
-
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePos({ 
@@ -23,6 +21,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    const roles = ['React Native Developer', 'MERN Stack Developer', 'UI/UX Designer'];
     const currentText = roles[textIndex];
     if (charIndex < currentText.length) {
       const timeout = setTimeout(() => {
@@ -38,7 +37,7 @@ export default function Home() {
       }, 1500);
       return () => clearTimeout(timeout);
     }
-  }, [charIndex, textIndex, roles]);
+  }, [charIndex, textIndex]);
 
   return (
     <main className="relative min-h-screen lg:h-screen lg:overflow-hidden flex items-center justify-center lg:block font-outfit">
