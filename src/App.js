@@ -8,11 +8,13 @@ import Portfolio from './Pages/Portfolio/Portfolio';
 
 
 
+import Cursor from './components/Cursor';
+
 function App() {
   return (
    <>
+   <Cursor />
    <Navbar/>
-  
    <Routes>
     <Route index element={<Home/>}/>
     <Route path='about' element={<About/>}/>

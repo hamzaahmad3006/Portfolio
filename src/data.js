@@ -58,60 +58,65 @@ export const links = [
   },
 
   {
-    id:5,
-    name:"Mode",
-    icon:<DarkAndLightMode/>,
-    
+    id: 5,
+    name: "Mode",
+    icon: <DarkAndLightMode />,
+
   }
 ];
 
 export const personalInfo = [
   {
     id: 1,
-    title: 'First Name : ',
+    title: 'First Name: ',
     description: 'Hamza',
   },
 
   {
     id: 2,
-    title: 'Last Name : ',
+    title: 'Last Name: ',
     description: 'Ahmad',
   },
 
   {
     id: 3,
-    title: 'Age : ',
-    description: '22 Years',
+    title: 'Age: ',
+    description: '24 Years',
   },
 
   {
     id: 4,
-    title: 'Nationality : ',
+    title: 'Nationality: ',
     description: 'Pakistani',
   },
 
   {
     id: 5,
-    title: 'Freelance : ',
+    title: 'Freelance: ',
     description: 'Available',
   },
 
   {
     id: 6,
-    title: 'Address : ',
+    title: 'Address: ',
     description: 'Faisalabad',
   },
 
   {
     id: 7,
-    title: 'Phone : ',
+    title: 'Phone: ',
     description: '+92 3226075308',
+  },
+  {
+    id: 8,
+    title: 'Github: ',
+    description: 'hamzaahmad3006',
   },
 
   {
-    id: 8,
-    title: 'Email : ',
-    description: 'ha698174@gmail.com',
+    id: 9,
+    title: 'Email: ',
+    description: 'hamzaahmad3006@gmail.com',
   },
 
   // {
@@ -121,8 +126,8 @@ export const personalInfo = [
   // },
 
   {
-    id: 9,
-    title: 'Languages : ',
+    id: 10,
+    title: 'Languages: ',
     description: 'Urdu,Punjabi, English',
   },
 ];
@@ -178,9 +183,9 @@ export const resume = [
     title: 'Frontend Developer <span> Academic Work </span>',
     desc: 'Designed and developed user-friendly interfaces using React, focusing on performance, accessibility, and user-centric design.',
   },
-  
-  
-  
+
+
+
   {
     id: 4,
     category: 'education',
@@ -205,77 +210,77 @@ export const resume = [
     title: 'Matriculation in Science <span> Sacred Angels School </span>',
     desc: 'Completed secondary education with a focus on science subjects, developing critical thinking and problem-solving skills.',
   }
-  
+
 ];
 
 export const skills = [
-    {
-      id: 1,
-      title: 'HTML',
-      percentage: '90',
-    },
-    {
-      id: 2,
-      title: 'CSS',
-      percentage: '85',
-    },
-    {
-      id: 3,
-      title: 'JavaScript',
-      percentage: '80',
-    },
-    {
-      id: 4,
-      title: 'React.js',
-      percentage: '75',
-    },
-    {
-      id: 5,
-      title: 'React Native',
-      percentage: '70',
-    },
-    {
-      id: 6,
-      title: 'Node.js',
-      percentage: '80',
-    },
-    {
-      id: 7,
-      title: 'Express.js',
-      percentage: '78',
-    },
-    {
-      id: 8,
-      title: 'MongoDB',
-      percentage: '85',
-    },
-    {
-      id: 9,
-      title: 'Firebase',
-      percentage: '80',
-    },
-    {
-      id: 10,
-      title: 'Git & GitHub',
-      percentage: '85',
-    },
-    {
-      id: 11,
-      title: 'Bootstrap',
-      percentage: '80',
-    },
-   
-    {
-      id: 13,
-      title: 'Next.js',
-      percentage: '70',
-    },
-    
-   
-    
-   
-  ];
-  
+  {
+    id: 1,
+    title: 'HTML',
+    percentage: '90',
+  },
+  {
+    id: 2,
+    title: 'CSS',
+    percentage: '85',
+  },
+  {
+    id: 3,
+    title: 'JavaScript',
+    percentage: '80',
+  },
+  {
+    id: 4,
+    title: 'React.js',
+    percentage: '75',
+  },
+  {
+    id: 5,
+    title: 'React Native',
+    percentage: '70',
+  },
+  {
+    id: 6,
+    title: 'Node.js',
+    percentage: '80',
+  },
+  {
+    id: 7,
+    title: 'Express.js',
+    percentage: '78',
+  },
+  {
+    id: 8,
+    title: 'MongoDB',
+    percentage: '85',
+  },
+  {
+    id: 9,
+    title: 'Firebase',
+    percentage: '80',
+  },
+  {
+    id: 10,
+    title: 'Git & GitHub',
+    percentage: '85',
+  },
+  {
+    id: 11,
+    title: 'Bootstrap',
+    percentage: '80',
+  },
+
+  {
+    id: 13,
+    title: 'Next.js',
+    percentage: '70',
+  },
+
+
+
+
+];
+
 
 export const portfolio = [
   {

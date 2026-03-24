@@ -1,69 +1,31 @@
-/* Light Mode (Default) */
-body, html {
-  background-color: white;
-  color: var(--text-color); /* Use a custom text color for light mode */
+/* Dark Mode (Variables are handled in App.css) */
+body.dark-mode {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Light Mode Elements (Default) */
-h1, button, a {
-  color: var(--text-color); /* Inherit the default text color in light mode */
-}
-
-/* Dark Mode */
-body.dark-mode, html.dark-mode {
-  background-color: rgb(17, 24, 39) !important; /* Background for dark mode */
-  color: white !important; /* Default text color for body */
-}
-
-/* Change Text Color to White in Dark Mode */
-body.dark-mode h1,
-body.dark-mode h3,
-body.dark-mode h2,
-body.dark-mode p,
-body.dark-mode .skills_title,
-
-body.dark-mode button,
-body.dark-mode a {
-  color: white !important; /* Change only the text color */
-}
-body.dark-mode .nav_link:hover,.active-nav{
-  color: wheat !important;
-}
-body.dark-mode .active-nav:hover{
-  color: wheat !important;
+body.dark-mode .active-nav {
   background-color: var(--first-color) !important;
-}
-body.dark-mode .nav_link,
-body.dark-mode .active-nav{
-color: var(--text-white) !important;
-}
-body.dark-mode .resume_date{
-  background-color: #2d3748 !important;
-}
-body.dark-mode .info_description{
- color: white;
-}
-
-body.dark-mode  .nav_link{
-  background-color: #2d3748 !important;
+  color: white !important;
 }
 
 body.dark-mode .CircularProgressbar-text {
-  fill: var(--text-white) !important;}
+  fill: var(--text-white) !important;
+}
 
-/* General Button Styling (Remains the Same Across Both Modes) */
+/* General Button Styling */
 .mode_button {
-  background: none; /* Transparent background */
+  background: none;
   border: none;
   cursor: pointer;
   font-size: 24px;
-  color: var(--text-white);
+  color: var(--title-color); /* Updated to use dynamic title color */
   text-align: center;
-  transition: color 0.3s, background-color 0.3s;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Optional Hover Effect (Applies to Both Modes) */
 .mode_button:hover {
-  color: var(--text-white); /* Light hover effect */
+  color: var(--first-color);
 }

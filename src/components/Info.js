@@ -6,9 +6,9 @@ export default function Info() {
     <>
     {personalInfo.map(({title,description},index)=>{
         return(
-            <li className="info_item" key={index}>
-                <span className="info_title">{title}</span>
-                <span className="info_description">{description}</span>
+            <li className="flex items-center gap-x-2" key={index}>
+                <span className="whitespace-nowrap text-[15px] text-text-color">{title}</span>
+                <span className="block text-[15px] font-semibold text-title-color break-all">{description}</span>
             </li>
         )
     })}
