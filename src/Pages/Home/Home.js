@@ -11,9 +11,9 @@ export default function Home() {
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      setMousePos({ 
-        x: (e.clientX / window.innerWidth - 0.5) * 20, 
-        y: (e.clientY / window.innerHeight - 0.5) * 20 
+      setMousePos({
+        x: (e.clientX / window.innerWidth - 0.5) * 20,
+        y: (e.clientY / window.innerHeight - 0.5) * 20
       });
     };
     window.addEventListener('mousemove', handleMouseMove);
@@ -21,7 +21,12 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    const roles = ['React Native Developer', 'MERN Stack Developer', 'UI/UX Designer'];
+    const roles = [
+      'React Native Engineer',
+      'Full-Stack MERN Developer',
+      'Python & AI Developer',
+      'LLM & AI Integration Specialist'
+    ]
     const currentText = roles[textIndex];
     if (charIndex < currentText.length) {
       const timeout = setTimeout(() => {
@@ -42,23 +47,23 @@ export default function Home() {
   return (
     <main className="relative min-h-screen lg:h-screen lg:overflow-hidden flex items-center justify-center lg:block font-outfit">
       {/* Decorative Background Block - Premium Gradient with Parallax */}
-      <div 
+      <div
         className="fixed h-[200%] w-full bg-gradient-to-br from-first-color via-first-color to-[#2c3e50] -top-1/2 -left-[83%] -rotate-[15deg] hidden lg:block -z-[-1] transition-all duration-700 opacity-90"
         style={{ transform: `rotate(-15deg) translate(${mousePos.x * -0.3}px, ${mousePos.y * -0.3}px)` }}
       ></div>
 
       <section className="relative z-10 grid lg:grid-cols-[4.32fr_7.68fr] items-center p-5 lg:p-10 min-h-screen lg:h-screen gap-10 lg:gap-x-20 flex flex-col lg:flex-row justify-center">
         {/* Profile Image with Parallax and Scale Entrance */}
-        <div 
-           className="hidden lg:block h-full overflow-hidden rounded-[30px] shadow-2xl animate-scaleIn"
-           style={{ transform: `translate(${mousePos.x}px, ${mousePos.y}px)` }}
+        <div
+          className="hidden lg:block h-full overflow-hidden rounded-[30px] shadow-2xl animate-scaleIn"
+          style={{ transform: `translate(${mousePos.x}px, ${mousePos.y}px)` }}
         >
-            <img src={Profile} alt="Profile" className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" />
+          <img src={Profile} alt="Profile" className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" />
         </div>
-        
+
         {/* Mobile Profile Image */}
         <div className="lg:hidden w-[150px] h-[150px] mx-auto rounded-full border-4 border-first-color/30 overflow-hidden shadow-xl mb-8 animate-scaleIn">
-            <img src={Profile} alt="Profile" className="w-full h-full object-cover object-top" />
+          <img src={Profile} alt="Profile" className="w-full h-full object-cover object-top" />
         </div>
 
         <div className="home_content lg:pl-10">
@@ -71,7 +76,7 @@ export default function Home() {
               Hi, I'm a professionally trained MERN Stack developer passionate about building responsive, user-friendly web applications. I specialize in creating seamless front-end experiences and robust back-end solutions.
             </p>
             <Link to="/about" className="group glass-dark relative inline-flex items-center h-[60px] px-10 pr-[80px] border border-first-color/20 rounded-full text-title-color text-[16px] font-bold transition-all duration-500 hover:text-white hover:-translate-y-1 hover:shadow-2xl overflow-hidden animate-fadeInUp opacity-0 [animation-delay:600ms]">
-               More About Me 
+              More About Me
               <span className="absolute right-[3px] top-[3px] w-[54px] h-[54px] bg-first-color text-white rounded-full flex items-center justify-center text-[20px] transition-all duration-500 group-hover:bg-white shadow-lg">
                 <FaArrowRight className="transition-all duration-500 group-hover:translate-x-1 group-hover:text-first-color" />
               </span>

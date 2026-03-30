@@ -1,10 +1,10 @@
 import React from 'react';
 import {
-  FaDribbble,
   FaEnvelopeOpen,
   FaFacebookF,
+  FaGithub,
+  FaLinkedinIn,
   FaPhoneSquareAlt,
-  FaYoutube,
 } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FiSend } from 'react-icons/fi';
@@ -13,8 +13,8 @@ export default function Contact() {
   const socialLinks = [
     { Icon: FaFacebookF, href: 'https://www.facebook.com/' },
     { Icon: FaXTwitter, href: 'https://twitter.com/' },
-    { Icon: FaYoutube, href: 'https://www.youtube.com/' },
-    { Icon: FaDribbble, href: 'https://dribbble.com/' },
+    { Icon: FaLinkedinIn, href: 'https://www.linkedin.com/in/hamza-ahmad-6aab63337/' },
+    { Icon: FaGithub, href: 'https://github.com/hamzaahmad3006' },
   ];
 
   return (
@@ -41,7 +41,7 @@ export default function Contact() {
               <FaEnvelopeOpen className="text-[34px] text-first-color transition-transform group-hover:scale-110" />
               <div>
                 <span className="block font-bold text-[15px] text-title-color opacity-60 uppercase tracking-widest mb-1">Mail Me</span>
-                <span className="block font-bold text-[18px] text-title-color">ha698174@gmail.com</span>
+                <span className="block font-bold text-[18px] text-title-color">hamzaahmad3006@gmail.com</span>
               </div>
             </div>
 
@@ -56,11 +56,11 @@ export default function Contact() {
 
           <div className="flex gap-x-5 px-4">
             {socialLinks.map(({ Icon, href }, index) => (
-              <a 
+              <a
                 key={index}
-                href={href} 
-                target="_blank" 
-                rel="noreferrer" 
+                href={href}
+                target="_blank"
+                rel="noreferrer"
                 className="w-11 h-11 flex items-center justify-center rounded-full bg-container-color text-title-color hover:bg-first-color hover:text-white transition-all duration-500 shadow-md hover:shadow-xl hover:-translate-y-1.5"
               >
                 <Icon className="text-[18px]" />
@@ -83,7 +83,7 @@ export default function Contact() {
           ></textarea>
 
           <button className="group relative inline-flex items-center h-[60px] px-10 pr-[75px] border border-first-color/30 rounded-full text-title-color text-[16px] font-bold transition-all duration-500 hover:text-white hover:-translate-y-1.5 hover:shadow-[0_20px_40px_rgba(44,62,80,0.15)] overflow-hidden mt-8 bg-transparent">
-             Send Message 
+            Send Message
             <span className="absolute right-[4px] top-[4px] w-[52px] h-[52px] bg-first-color text-white rounded-full flex items-center justify-center text-[20px] transition-all duration-500 group-hover:bg-white shadow-lg">
               <FiSend className="transition-all duration-500 group-hover:text-first-color" />
             </span>

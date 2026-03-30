@@ -15,6 +15,10 @@ import Work3 from './assets/project-3.PNG';
 import Work4 from './assets/project-4.JPG';
 import Work5 from './assets/project-5.JPG';
 import Work6 from './assets/project-6.jpg';
+import Work7 from './assets/project-7.PNG';
+import Work8 from './assets/project-8.png';
+import Work9 from './assets/project-9.png';
+import Work10 from './assets/project-10.png';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -163,15 +167,15 @@ export const resume = [
     id: 1,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2022 - PRESENT',
-    title: 'MERN Stack Developer <span> University Project </span>',
-    desc: 'Developing full-stack web applications as part of academic projects using MongoDB, Express.js, React, and Node.js, focusing on building scalable and responsive solutions.',
+    year: '2024 - PRESENT',
+    title: 'Web & Mobile App Developer at<span> Techloset Solutions </span>',
+    desc: 'Working as a Web & Mobile App Developer, building scalable applications using React, React Native, Node.js, and MongoDB, while developing responsive interfaces and optimizing performance for seamless user experiences.',
   },
   {
     id: 2,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2023 - PRESENT',
+    year: '2023 - 2024',
     title: 'React Native App Developer <span> University Project </span>',
     desc: 'Creating cross-platform mobile applications for academic projects with React Native, ensuring seamless performance on both iOS and Android devices.',
   },
@@ -192,7 +196,7 @@ export const resume = [
     icon: <FaGraduationCap />,
     year: '2025',
     title: 'Bachelor of Science in Computer Science <span> GC University </span>',
-    desc: 'Pursuing a degree in Computer Science with a focus on web and mobile application development, data structures, algorithms, and software engineering principles.',
+    desc: 'Completed a degree in Computer Science with a focus on web and mobile application development, data structures, algorithms, and software engineering principles.',
   },
   {
     id: 5,
@@ -266,14 +270,34 @@ export const skills = [
   },
   {
     id: 11,
-    title: 'Bootstrap',
-    percentage: '80',
+    title: 'Tailwind',
+    percentage: '90',
+  },
+  {
+    id: 12,
+    title: 'Redux',
+    percentage: '90',
   },
 
   {
     id: 13,
     title: 'Next.js',
     percentage: '70',
+  },
+  {
+    id: 14,
+    title: 'Python',
+    percentage: '70',
+  },
+  {
+    id: 15,
+    title: 'Machine Learning',
+    percentage: '50',
+  },
+  {
+    id: 16,
+    title: 'LLM',
+    percentage: '80',
   },
 
 
@@ -285,6 +309,114 @@ export const skills = [
 export const portfolio = [
   {
     id: 1,
+    img: Work10,
+    title: 'AI Code Reviewer',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Project Management System Dashboard ',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Type : ',
+        desc: 'Code Reviewer',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Next.js',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://smart-code-reviewer-agent.vercel.app/',
+      },
+    ],
+  },
+  {
+    id: 2,
+    img: Work9,
+    title: 'PM Dashboard',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Project Management System Dashboard ',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Type : ',
+        desc: 'Trello Clone',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'React.js',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://project-management-system-two.vercel.app/',
+      },
+    ],
+  },
+  {
+    id: 3,
+    img: Work8,
+    title: 'Mobile App',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Mobile App',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Type : ',
+        desc: 'Podcast App',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'React Native',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://drive.google.com/drive/u/1/folders/1uf_zRWTLdDT7J26SxM5-dFLM4PjWgdlj',
+      },
+    ],
+  },
+  {
+    id: 4,
+    img: Work7,
+    title: 'Website Design',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Website',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Type : ',
+        desc: 'Eccommerce',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Next.Js',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://master-dynamic-ecommerce.vercel.app/',
+      },
+    ],
+  },
+  {
+    id: 5,
     img: Work1,
     title: 'Website Design',
     details: [
@@ -312,7 +444,7 @@ export const portfolio = [
   },
 
   {
-    id: 2,
+    id: 6,
     img: Work2,
     title: 'Landing Page',
     details: [
@@ -340,7 +472,7 @@ export const portfolio = [
   },
 
   {
-    id: 3,
+    id: 7,
     img: Work3,
     title: 'Website Design',
     details: [
@@ -368,7 +500,7 @@ export const portfolio = [
   },
 
   {
-    id: 4,
+    id: 8,
     img: Work4,
     title: 'Landing Page',
     details: [
@@ -396,7 +528,7 @@ export const portfolio = [
   },
 
   {
-    id: 5,
+    id: 9,
     img: Work5,
     title: 'Design',
     details: [
@@ -420,7 +552,7 @@ export const portfolio = [
   },
 
   {
-    id: 6,
+    id: 10,
     img: Work6,
     title: 'Design',
     details: [

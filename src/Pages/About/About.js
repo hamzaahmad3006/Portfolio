@@ -18,7 +18,7 @@ export default function About() {
         <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-x-[70px] items-start">
           <div className="animate-fadeInUp">
             <h3 className="text-[26px] font-semibold mb-6 text-title-color">Personal Infos</h3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-5 mb-8">
+            <ul className="grid grid-cols-2 gap-y-5 mb-8">
               <Info />
             </ul>
 
