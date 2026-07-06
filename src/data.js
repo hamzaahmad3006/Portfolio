@@ -5,9 +5,7 @@ import {
   FaEnvelopeOpen,
   FaBriefcase,
   FaGraduationCap,
-  FaCode,
 } from 'react-icons/fa';
-import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
 import Work1 from './assets/project-1.PNG';
 import Work2 from './assets/project-2.PNG';
@@ -306,277 +304,135 @@ export const skills = [
 ];
 
 
+// Your public GitHub profile — used for the "View all on GitHub" call to action.
+export const githubProfile = 'https://github.com/hamzaahmad3006';
+
+// Category filter definitions used by the Portfolio page
+export const portfolioCategories = [
+  { id: 'all', label: 'All Work' },
+  { id: 'ai', label: 'AI / LLM' },
+  { id: 'web', label: 'Web Apps' },
+  { id: 'mobile', label: 'Mobile' },
+  { id: 'design', label: 'UI Design' },
+];
+
+// Tip: add a `repo: 'https://github.com/you/project'` field to any project
+// below and a "Code" button will automatically appear on its card + modal.
 export const portfolio = [
   {
     id: 1,
     img: Work10,
     title: 'AI Code Reviewer',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Project Management System Dashboard ',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Type : ',
-        desc: 'Code Reviewer',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Next.js',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'https://smart-code-reviewer-agent.vercel.app/',
-      },
-    ],
+    type: 'AI Agent',
+    category: 'ai',
+    featured: true,
+    description:
+      'An AI-powered code review agent that analyses pull requests, flags bugs, and suggests fixes in real time using large language models.',
+    tags: ['Next.js', 'LLM', 'OpenAI', 'Tailwind'],
+    link: 'https://smart-code-reviewer-agent.vercel.app/',
+    repo: null,
   },
   {
     id: 2,
     img: Work9,
-    title: 'PM Dashboard',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Project Management System Dashboard ',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Type : ',
-        desc: 'Trello Clone',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'React.js',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'https://project-management-system-two.vercel.app/',
-      },
-    ],
+    title: 'Project Management Dashboard',
+    type: 'SaaS Dashboard',
+    category: 'web',
+    featured: true,
+    description:
+      'A full-featured Trello-style project management board with drag-and-drop tasks, boards, and real-time collaboration.',
+    tags: ['React', 'Redux', 'Firebase', 'DnD'],
+    link: 'https://project-management-system-two.vercel.app/',
   },
   {
     id: 3,
     img: Work8,
-    title: 'Mobile App',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Mobile App',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Type : ',
-        desc: 'Podcast App',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'React Native',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'https://drive.google.com/drive/u/1/folders/1uf_zRWTLdDT7J26SxM5-dFLM4PjWgdlj',
-      },
-    ],
+    title: 'Podcast Streaming App',
+    type: 'Mobile App',
+    category: 'mobile',
+    featured: true,
+    description:
+      'A cross-platform podcast application with audio streaming, playlists, and offline downloads built for iOS and Android.',
+    tags: ['React Native', 'Expo', 'Firebase'],
+    link: 'https://drive.google.com/drive/u/1/folders/1uf_zRWTLdDT7J26SxM5-dFLM4PjWgdlj',
   },
   {
     id: 4,
     img: Work7,
-    title: 'Website Design',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Type : ',
-        desc: 'Eccommerce',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Next.Js',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'https://master-dynamic-ecommerce.vercel.app/',
-      },
-    ],
+    title: 'Dynamic E-Commerce Store',
+    type: 'E-Commerce',
+    category: 'web',
+    featured: true,
+    description:
+      'A modern e-commerce storefront with dynamic product pages, cart management, and a responsive checkout flow.',
+    tags: ['Next.js', 'Tailwind', 'Stripe'],
+    link: 'https://master-dynamic-ecommerce.vercel.app/',
   },
   {
     id: 5,
     img: Work1,
-    title: 'Website Design',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Type : ',
-        desc: 'Eccommerce',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'React Js',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'https://krist-eccommerce.web.app/',
-      },
-    ],
+    title: 'Krist Fashion Store',
+    type: 'E-Commerce',
+    category: 'web',
+    description:
+      'A fashion e-commerce web app featuring product filtering, wishlists, and Firebase-backed authentication.',
+    tags: ['React', 'Firebase', 'Redux'],
+    link: 'https://krist-eccommerce.web.app/',
   },
-
   {
     id: 6,
     img: Work2,
-    title: 'Landing Page',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Type : ',
-        desc: 'Collaborative-Notes',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'React JS',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'https://my-store-f723e.firebaseapp.com/',
-      },
-    ],
+    title: 'Collaborative Notes',
+    type: 'Productivity',
+    category: 'web',
+    description:
+      'A real-time collaborative note-taking application with shared workspaces and instant syncing across devices.',
+    tags: ['React', 'Firebase'],
+    link: 'https://my-store-f723e.firebaseapp.com/',
   },
-
   {
     id: 7,
     img: Work3,
-    title: 'Website Design',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Type : ',
-        desc: 'Todo',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'React Js',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'https://new-todo-app-bb280.web.app/',
-      },
-    ],
+    title: 'Todo Task Manager',
+    type: 'Productivity',
+    category: 'web',
+    description:
+      'A clean and intuitive todo application to manage daily tasks with persistence and status tracking.',
+    tags: ['React', 'Firebase'],
+    link: 'https://new-todo-app-bb280.web.app/',
   },
-
   {
     id: 8,
     img: Work4,
-    title: 'Landing Page',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Type : ',
-        desc: 'Stagging',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'HTML CSS Bootstrap',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.Stagging.com',
-      },
-    ],
+    title: 'Startup Landing Page',
+    type: 'Landing Page',
+    category: 'design',
+    description:
+      'A pixel-perfect, responsive marketing landing page with smooth scroll animations and modern layout.',
+    tags: ['HTML', 'CSS', 'Bootstrap'],
+    link: null,
   },
-
   {
     id: 9,
     img: Work5,
-    title: 'Design',
-    details: [
-      {
-        title: 'Project : ',
-        desc: 'Login Page',
-      },
-      {
-        title: 'Type : ',
-        desc: 'Login',
-      },
-      {
-        title: 'Language : ',
-        desc: 'HTML CSS JS',
-      },
-      {
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
-      },
-    ],
+    title: 'Login UI Concept',
+    type: 'UI Design',
+    category: 'design',
+    description:
+      'A polished authentication UI concept exploring clean form design, validation states, and micro-interactions.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    link: null,
   },
-
   {
     id: 10,
     img: Work6,
-    title: 'Design',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Design',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Type : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'HTML CSS Bootstrap',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.br.com',
-      },
-    ],
+    title: 'Agency Website',
+    type: 'Website',
+    category: 'design',
+    description:
+      'A creative agency website concept with a bold hero section, service cards, and a responsive grid layout.',
+    tags: ['HTML', 'CSS', 'Bootstrap'],
+    link: null,
   },
 ];
 

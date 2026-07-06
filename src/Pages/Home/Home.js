@@ -3,6 +3,8 @@ import Profile from '../../assets/home.png'
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
 
+const heroTech = ['React', 'React Native', 'Next.js', 'Node.js', 'Python', 'LLM / AI']
+
 export default function Home() {
   const [displayedText, setDisplayedText] = useState("");
   const [textIndex, setTextIndex] = useState(0);
@@ -52,7 +54,7 @@ export default function Home() {
         style={{ transform: `rotate(-15deg) translate(${mousePos.x * -0.3}px, ${mousePos.y * -0.3}px)` }}
       ></div>
 
-      <section className="relative z-10 grid lg:grid-cols-[4.32fr_7.68fr] items-center p-5 lg:p-10 min-h-screen lg:h-screen gap-10 lg:gap-x-20 flex flex-col lg:flex-row justify-center">
+      <section className="relative z-10 flex flex-col justify-center lg:grid lg:grid-cols-[4.32fr_7.68fr] items-center p-5 lg:p-10 min-h-screen lg:h-screen gap-10 lg:gap-x-20">
         {/* Profile Image with Parallax and Scale Entrance */}
         <div
           className="hidden lg:block h-full overflow-hidden rounded-[30px] shadow-2xl animate-scaleIn"
@@ -75,13 +77,31 @@ export default function Home() {
             <p className="leading-[1.6] lg:leading-[2.125] my-6 lg:mb-10 lg:mt-6 text-text-color lg:text-[17px] font-medium animate-fadeInUp opacity-0 [animation-delay:400ms]">
               Hi, I'm a professionally trained MERN Stack developer passionate about building responsive, user-friendly web applications. I specialize in creating seamless front-end experiences and robust back-end solutions.
             </p>
-            <Link to="/about" className="group glass-dark relative inline-flex items-center h-[60px] px-10 pr-[80px] border border-first-color/20 rounded-full text-title-color text-[16px] font-bold transition-all duration-500 hover:text-white hover:-translate-y-1 hover:shadow-2xl overflow-hidden animate-fadeInUp opacity-0 [animation-delay:600ms]">
-              More About Me
-              <span className="absolute right-[3px] top-[3px] w-[54px] h-[54px] bg-first-color text-white rounded-full flex items-center justify-center text-[20px] transition-all duration-500 group-hover:bg-white shadow-lg">
-                <FaArrowRight className="transition-all duration-500 group-hover:translate-x-1 group-hover:text-first-color" />
-              </span>
-              <div className="absolute inset-0 bg-first-color -z-10 translate-x-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:translate-x-0"></div>
-            </Link>
+            {/* Tech stack chips */}
+            <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-8 animate-fadeInUp opacity-0 [animation-delay:500ms]">
+              {heroTech.map((tech) => (
+                <span
+                  key={tech}
+                  className="text-[12.5px] font-semibold px-3 py-1.5 rounded-lg bg-first-color/10 text-first-color border border-first-color/15"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 animate-fadeInUp opacity-0 [animation-delay:600ms]">
+              <Link to="/about" className="group glass-dark relative inline-flex items-center h-[60px] px-10 pr-[80px] border border-first-color/20 rounded-full text-title-color text-[16px] font-bold transition-all duration-500 hover:text-white hover:-translate-y-1 hover:shadow-2xl overflow-hidden">
+                More About Me
+                <span className="absolute right-[3px] top-[3px] w-[54px] h-[54px] bg-first-color text-white rounded-full flex items-center justify-center text-[20px] transition-all duration-500 group-hover:bg-white shadow-lg">
+                  <FaArrowRight className="transition-all duration-500 group-hover:translate-x-1 group-hover:text-first-color" />
+                </span>
+                <div className="absolute inset-0 bg-first-color -z-10 translate-x-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:translate-x-0"></div>
+              </Link>
+
+              <Link to="/portfolio" className="inline-flex items-center h-[60px] px-8 rounded-full border border-border-color text-title-color text-[16px] font-bold transition-all duration-300 hover:border-first-color hover:text-first-color hover:-translate-y-1">
+                View My Work
+              </Link>
+            </div>
           </div>
         </div>
       </section>
