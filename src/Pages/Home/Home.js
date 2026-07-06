@@ -70,7 +70,7 @@ export default function Home() {
 
         <div className="home_content lg:pl-10">
           <div className="max-w-[600px] mx-auto lg:mx-0 pt-[20px] text-center lg:text-left">
-            <h1 className="relative text-[36px] lg:text-[52px] lg:pl-[70px] leading-[1.24] font-extrabold text-[#2c3e50] before:hidden lg:before:block before:content-[''] before:absolute before:left-0 before:top-[22%] before:w-12 before:h-1.5 before:rounded-full before:bg-first-color animate-fadeInLeft opacity-0 [animation-delay:200ms]">
+            <h1 className="relative text-[36px] lg:text-[52px] lg:pl-[70px] leading-[1.24] font-extrabold text-[#2c3e50] dark:text-white before:hidden lg:before:block before:content-[''] before:absolute before:left-0 before:top-[22%] before:w-12 before:h-1.5 before:rounded-full before:bg-first-color animate-fadeInLeft opacity-0 [animation-delay:200ms]">
               <span className="tracking-tight">I'm Hamza Ahmad.</span><br />
               <span className="text-[32px] lg:text-[45px] font-bold text-first-color tracking-tight">{displayedText}<span className="animate-blink font-thin text-first-color">|</span></span>
             </h1>

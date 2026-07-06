@@ -2,13 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg" />
+    <link rel="alternate icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#2c3e50" />
+    <meta name="author" content="Hamza Ahmad" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Hamza Ahmad — Full-Stack (MERN) & React Native developer building modern, responsive web and mobile applications, plus AI/LLM-powered tools."
     />
+    <meta name="keywords" content="Hamza Ahmad, React developer, React Native, MERN stack, Next.js, Full Stack Developer, Portfolio, Faisalabad" />
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hamza Ahmad — Full-Stack & React Native Developer" />
+    <meta property="og:description" content="Full-Stack (MERN) & React Native developer building modern web and mobile apps, plus AI/LLM-powered tools." />
+    <meta property="og:image" content="%PUBLIC_URL%/logo512.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hamza Ahmad — Full-Stack & React Native Developer" />
+    <meta name="twitter:description" content="Full-Stack (MERN) & React Native developer building modern web and mobile apps, plus AI/LLM-powered tools." />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -31,13 +43,16 @@
   </head>
   <body>
     <script>
-      // Apply the saved theme before the app renders to avoid a light-mode flash.
+      // Apply the theme before the app renders to avoid a flash.
+      // Defaults to dark mode unless the visitor previously chose light.
       (function () {
         try {
-          if (localStorage.getItem('theme') === 'dark') {
+          if (localStorage.getItem('theme') !== 'light') {
             document.body.classList.add('dark-mode');
           }
-        } catch (e) {}
+        } catch (e) {
+          document.body.classList.add('dark-mode');
+        }
       })();
     </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>

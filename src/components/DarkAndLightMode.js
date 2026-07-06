@@ -4,11 +4,12 @@ import "./DarkAndLightMode.css";
 
 export default function DarkAndLightMode() {
   // Initialise from the saved preference so the toggle icon matches the page.
+  // Defaults to dark mode unless the visitor previously chose light.
   const [mode, setMode] = useState(() => {
     try {
-      return localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
+      return localStorage.getItem('theme') === 'light' ? 'light' : 'dark';
     } catch (e) {
-      return 'light';
+      return 'dark';
     }
   });
 
