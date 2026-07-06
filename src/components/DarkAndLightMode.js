@@ -1,18 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import "./DarkAndLightMode.css";
 
 export default function DarkAndLightMode() {
-  const [mode, setMode] = useState('light');
+  // Initialise from the saved preference so the toggle icon matches the page.
+  const [mode, setMode] = useState(() => {
+    try {
+      return localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
+    } catch (e) {
+      return 'light';
+    }
+  });
+
+  // Keep the <body> class and saved preference in sync with the state.
+  useEffect(() => {
+    document.body.classList.toggle('dark-mode', mode === 'dark');
+    try {
+      localStorage.setItem('theme', mode);
+    } catch (e) {}
+  }, [mode]);
 
   const toggleMode = () => {
-    if (mode === 'light') {
-      setMode('dark');
-      document.body.classList.add('dark-mode');
-    } else {
-      setMode('light');
-      document.body.classList.remove('dark-mode');
-    }
+    setMode((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
 
   return (

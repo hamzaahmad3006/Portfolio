@@ -1,7 +1,7 @@
 import React from 'react'
 import Info from '../../components/Info'
 import Stats from '../../components/Stats'
-import { FaDownload } from 'react-icons/fa'
+import { FaDownload, FaBriefcase, FaGraduationCap } from 'react-icons/fa'
 import Skills from '../../components/Skills'
 import { resume } from '../../data'
 import ResumeItem from '../../components/ResumeItem'
@@ -49,9 +49,15 @@ export default function About() {
       <div className="border-t border-border-color max-w-[40%] mx-auto my-[72px] mb-[56px]"></div>
 
       <section className="animate-fadeInUp">
-        <h3 className="text-center text-[26px] font-semibold mb-12 text-title-color">Experience & Education</h3>
-        <div className="grid md:grid-cols-2 gap-[30px]">
-          <div className="resume_data">
+        <h3 className="text-center text-[26px] font-semibold mb-12 text-title-color">Experience &amp; Education</h3>
+        <div className="grid md:grid-cols-2 gap-x-[50px] gap-y-12">
+          <div>
+            <div className="flex items-center gap-3 mb-8">
+              <span className="grid place-items-center w-11 h-11 rounded-xl bg-first-color/10 text-first-color text-[19px]">
+                <FaBriefcase />
+              </span>
+              <h4 className="text-[20px] font-bold text-title-color">Experience</h4>
+            </div>
             {resume.map((val) => {
               if (val.category === 'experience') {
                 return <ResumeItem key={val.id} {...val} />
@@ -60,7 +66,13 @@ export default function About() {
             })}
           </div>
 
-          <div className="resume_data">
+          <div>
+            <div className="flex items-center gap-3 mb-8">
+              <span className="grid place-items-center w-11 h-11 rounded-xl bg-first-color/10 text-first-color text-[19px]">
+                <FaGraduationCap />
+              </span>
+              <h4 className="text-[20px] font-bold text-title-color">Education</h4>
+            </div>
             {resume.map((val) => {
               if (val.category === 'education') {
                 return <ResumeItem key={val.id} {...val} />
