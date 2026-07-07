@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1526"/>
+      <stop offset="1" stop-color="#0e2138"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="heat" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff4d3d" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#ff8a3d" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1120" cy="120" r="320" fill="url(#glow)"/>
+  <circle cx="160" cy="640" r="260" fill="url(#glow)"/>
+
+  <!-- Dashboard window -->
+  <rect x="120" y="92" width="1040" height="536" rx="24" fill="#0c1d33" stroke="#1e3a5f" stroke-width="1.5"/>
+
+  <!-- Title bar -->
+  <circle cx="156" cy="126" r="6" fill="#ff5f56"/>
+  <circle cx="178" cy="126" r="6" fill="#ffbd2e"/>
+  <circle cx="200" cy="126" r="6" fill="#27c93f"/>
+  <rect x="470" y="113" width="340" height="27" rx="13.5" fill="#0a1626" stroke="#1e3a5f"/>
+  <text x="640" y="131" text-anchor="middle" font-size="13" fill="#6b86a6">radiologyai-assistant.app</text>
+
+  <!-- Header -->
+  <rect x="152" y="162" width="46" height="46" rx="12" fill="url(#cyan)"/>
+  <path d="M175 172 v26 M162 185 h26" stroke="#0a1526" stroke-width="5" stroke-linecap="round"/>
+  <text x="212" y="184" fill="#ffffff" font-size="25" font-weight="700">RadiologyAI Assistant</text>
+  <text x="213" y="205" fill="#7f9bb8" font-size="14">AI X-ray Analysis Platform</text>
+  <rect x="980" y="168" width="150" height="34" rx="17" fill="#0c2a22" stroke="#1f6f52"/>
+  <circle cx="1002" cy="185" r="5" fill="#34d399"/>
+  <text x="1016" y="190" fill="#5fe0a8" font-size="13" font-weight="600">Analysis Complete</text>
+
+  <!-- X-ray viewer -->
+  <rect x="152" y="232" width="560" height="330" rx="16" fill="#060e1a" stroke="#16304d"/>
+  <text x="176" y="262" fill="#4d80a8" font-size="12" letter-spacing="1.5">CHEST X-RAY · PA VIEW</text>
+
+  <!-- stylized ribcage + spine -->
+  <g stroke="#274b70" stroke-width="3" fill="none" opacity="0.55" stroke-linecap="round">
+    <rect x="427" y="290" width="8" height="230" rx="4" fill="#274b70" stroke="none"/>
+    <path d="M427 300 Q345 315 305 360"/>
+    <path d="M427 335 Q335 352 292 405"/>
+    <path d="M427 372 Q332 392 292 450"/>
+    <path d="M427 410 Q340 432 300 492"/>
+    <path d="M435 300 Q517 315 557 360"/>
+    <path d="M435 335 Q527 352 570 405"/>
+    <path d="M435 372 Q530 392 570 450"/>
+    <path d="M435 410 Q522 432 562 492"/>
+  </g>
+
+  <!-- heatmap over left lung region -->
+  <circle cx="350" cy="425" r="95" fill="url(#heat)"/>
+  <circle cx="350" cy="425" r="30" fill="none" stroke="#ff6a4d" stroke-width="2" opacity="0.85"/>
+  <path d="M350 405 v40 M330 425 h40" stroke="#ff8a6d" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- scan beam -->
+  <rect x="168" y="392" width="528" height="2" fill="url(#cyan)" opacity="0.35"/>
+
+  <!-- overlay result chips -->
+  <rect x="176" y="502" width="168" height="40" rx="10" fill="#0b2a33" stroke="#22758a"/>
+  <text x="194" y="527" fill="#67e8f9" font-size="14" font-weight="600">Confidence · 92%</text>
+  <rect x="356" y="502" width="196" height="40" rx="10" fill="#33210f" stroke="#a8641f"/>
+  <text x="374" y="527" fill="#ffb266" font-size="14" font-weight="600">Finding · Pneumonia</text>
+
+  <!-- Prediction card -->
+  <rect x="736" y="232" width="272" height="150" rx="14" fill="#102237" stroke="#1e3a5f"/>
+  <text x="760" y="266" fill="#7f9bb8" font-size="12" letter-spacing="1.5">AI PREDICTION</text>
+  <text x="760" y="300" fill="#ffffff" font-size="26" font-weight="700">Pneumonia</text>
+  <rect x="760" y="322" width="224" height="10" rx="5" fill="#1b3350"/>
+  <rect x="760" y="322" width="206" height="10" rx="5" fill="url(#cyan)"/>
+  <text x="760" y="360" fill="#8fb0cf" font-size="13">Probability 92% · Model transparency</text>
+
+  <!-- Chat assistant card -->
+  <rect x="736" y="398" width="272" height="164" rx="14" fill="#102237" stroke="#1e3a5f"/>
+  <circle cx="758" cy="426" r="5" fill="#22d3ee"/>
+  <text x="772" y="431" fill="#cfe3f5" font-size="14" font-weight="600">AI Assistant</text>
+
+  <rect x="760" y="446" width="150" height="42" rx="12" fill="#17304d"/>
+  <rect x="774" y="460" width="118" height="6" rx="3" fill="#3f6187"/>
+  <rect x="774" y="472" width="86" height="6" rx="3" fill="#3f6187"/>
+
+  <rect x="838" y="498" width="146" height="30" rx="12" fill="#123b44"/>
+  <rect x="852" y="510" width="112" height="6" rx="3" fill="#2b7f92"/>
+
+  <rect x="760" y="536" width="130" height="18" rx="9" fill="#17304d"/>
+  <rect x="772" y="542" width="90" height="6" rx="3" fill="#3f6187"/>
+
+  <!-- Tech pills -->
+  <g font-size="13" font-weight="600">
+    <rect x="152" y="580" width="86" height="30" rx="15" fill="#0f2137" stroke="#254a6e"/>
+    <text x="195" y="600" fill="#9cc0e0" text-anchor="middle">Next.js</text>
+    <rect x="248" y="580" width="92" height="30" rx="15" fill="#0f2137" stroke="#254a6e"/>
+    <text x="294" y="600" fill="#9cc0e0" text-anchor="middle">FastAPI</text>
+    <rect x="350" y="580" width="92" height="30" rx="15" fill="#0f2137" stroke="#254a6e"/>
+    <text x="396" y="600" fill="#9cc0e0" text-anchor="middle">PyTorch</text>
+    <rect x="452" y="580" width="86" height="30" rx="15" fill="#0f2137" stroke="#254a6e"/>
+    <text x="495" y="600" fill="#9cc0e0" text-anchor="middle">Python</text>
+    <rect x="548" y="580" width="102" height="30" rx="15" fill="#0f2137" stroke="#254a6e"/>
+    <text x="599" y="600" fill="#9cc0e0" text-anchor="middle">Groq LLM</text>
+  </g>
+</svg>

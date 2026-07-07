@@ -3,6 +3,10 @@ import { FiGithub, FiArrowUpRight } from 'react-icons/fi'
 import { portfolio, portfolioCategories, githubProfile } from '../../data'
 import PortfolioItem from '../../components/PortfolioItem'
 
+// A project may belong to several categories (e.g. an AI app built for mobile).
+// Supports both the new `categories: [...]` array and the old single `category`.
+const catsOf = (p) => p.categories || (p.category ? [p.category] : [])
+
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState('all')
 
@@ -10,7 +14,7 @@ export default function Portfolio() {
   const categories = useMemo(
     () =>
       portfolioCategories.filter(
-        (cat) => cat.id === 'all' || portfolio.some((p) => p.category === cat.id)
+        (cat) => cat.id === 'all' || portfolio.some((p) => catsOf(p).includes(cat.id))
       ),
     []
   )
@@ -19,7 +23,7 @@ export default function Portfolio() {
     () =>
       activeCategory === 'all'
         ? portfolio
-        : portfolio.filter((p) => p.category === activeCategory),
+        : portfolio.filter((p) => catsOf(p).includes(activeCategory)),
     [activeCategory]
   )
 
@@ -53,7 +57,7 @@ export default function Portfolio() {
           const count =
             cat.id === 'all'
               ? portfolio.length
-              : portfolio.filter((p) => p.category === cat.id).length
+              : portfolio.filter((p) => catsOf(p).includes(cat.id)).length
           return (
             <button
               key={cat.id}

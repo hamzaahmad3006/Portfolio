@@ -17,6 +17,7 @@ import Work7 from './assets/project-7.PNG';
 import Work8 from './assets/project-8.png';
 import Work9 from './assets/project-9.png';
 import Work10 from './assets/project-10.png';
+import RadiologyAI from './assets/radiology-ai.svg';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -320,11 +321,24 @@ export const portfolioCategories = [
 // below and a "Code" button will automatically appear on its card + modal.
 export const portfolio = [
   {
+    id: 11,
+    img: RadiologyAI,
+    title: 'RadiologyAI Assistant',
+    type: 'AI Web App',
+    categories: ['ai', 'web'],
+    featured: true,
+    description:
+      'An AI medical-imaging platform that analyses chest X-rays to detect abnormalities, produces confidence-scored disease predictions with heatmaps, and explains findings through a conversational AI assistant.',
+    tags: ['Next.js', 'FastAPI', 'PyTorch', 'Python', 'Groq LLM', 'Tailwind'],
+    link: null,
+    repo: null,
+  },
+  {
     id: 1,
     img: Work10,
     title: 'AI Code Reviewer',
-    type: 'AI Agent',
-    category: 'ai',
+    type: 'AI Web App',
+    categories: ['ai', 'web'],
     featured: true,
     description:
       'An AI-powered code review agent that analyses pull requests, flags bugs, and suggests fixes in real time using large language models.',
