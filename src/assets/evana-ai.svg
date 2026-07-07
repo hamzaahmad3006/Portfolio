@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <linearGradient id="ebg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#181031"/>
+      <stop offset="1" stop-color="#0e1a3a"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c1638"/>
+      <stop offset="1" stop-color="#132140"/>
+    </linearGradient>
+    <radialGradient id="eglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#ebg)"/>
+  <circle cx="640" cy="360" r="300" fill="url(#eglow)"/>
+  <circle cx="1120" cy="150" r="220" fill="url(#eglow)"/>
+
+  <!-- ===== Left column ===== -->
+  <text x="92" y="104" fill="#ffffff" font-size="46" font-weight="800" letter-spacing="-1">Evana</text>
+  <text x="94" y="136" fill="#a78bfa" font-size="18" font-weight="600">AI Life Coach App</text>
+  <text x="94" y="172" fill="#93a4c4" font-size="14.5">Conversation-first coaching for goals,</text>
+  <text x="94" y="192" fill="#93a4c4" font-size="14.5">habits &amp; daily self-reflection.</text>
+
+  <!-- feature chips -->
+  <g>
+    <rect x="92" y="222" width="300" height="46" rx="23" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="118" cy="245" r="7" fill="#a78bfa"/>
+    <text x="140" y="250" fill="#dbe4f5" font-size="14.5" font-weight="600">AI Coaching Chat</text>
+
+    <rect x="92" y="280" width="300" height="46" rx="23" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="118" cy="303" r="7" fill="#2dd4bf"/>
+    <text x="140" y="308" fill="#dbe4f5" font-size="14.5" font-weight="600">Smart Goals &amp; Habits</text>
+
+    <rect x="92" y="338" width="300" height="46" rx="23" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="118" cy="361" r="7" fill="#f0a5d0"/>
+    <text x="140" y="366" fill="#dbe4f5" font-size="14.5" font-weight="600">Guided Reflections</text>
+  </g>
+
+  <!-- tech pills -->
+  <g font-size="12.5" font-weight="600">
+    <rect x="92" y="432" width="120" height="32" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <text x="152" y="452" fill="#c9b8ff" text-anchor="middle">React Native</text>
+    <rect x="220" y="432" width="66" height="32" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <text x="253" y="452" fill="#c9b8ff" text-anchor="middle">Expo</text>
+    <rect x="294" y="432" width="86" height="32" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <text x="337" y="452" fill="#c9b8ff" text-anchor="middle">FastAPI</text>
+    <rect x="92" y="474" width="98" height="32" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2dd4bf" stroke-opacity="0.35"/>
+    <text x="141" y="494" fill="#9af0e2" text-anchor="middle">Supabase</text>
+    <rect x="198" y="474" width="98" height="32" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#2dd4bf" stroke-opacity="0.35"/>
+    <text x="247" y="494" fill="#9af0e2" text-anchor="middle">Groq LLM</text>
+  </g>
+
+  <!-- ===== Phone mockup ===== -->
+  <rect x="485" y="96" width="300" height="584" rx="44" fill="#0a1024" stroke="#322a5c" stroke-width="2"/>
+  <rect x="497" y="112" width="276" height="552" rx="34" fill="url(#screen)"/>
+  <rect x="600" y="126" width="70" height="8" rx="4" fill="#2a2450"/>
+
+  <!-- chat header -->
+  <circle cx="527" cy="164" r="17" fill="url(#brand)"/>
+  <text x="527" y="169" fill="#0a1024" font-size="15" font-weight="800" text-anchor="middle">E</text>
+  <text x="553" y="159" fill="#ffffff" font-size="14.5" font-weight="700">Evana</text>
+  <text x="553" y="176" fill="#6fe0c8" font-size="11.5">AI Coach · online</text>
+  <line x1="497" y1="192" x2="773" y2="192" stroke="#ffffff" stroke-opacity="0.06"/>
+
+  <!-- AI bubble -->
+  <rect x="513" y="206" width="196" height="58" rx="16" fill="#241b40"/>
+  <text x="527" y="230" fill="#cdd6ec" font-size="11.5">Morning! Ready to plan your</text>
+  <text x="527" y="248" fill="#cdd6ec" font-size="11.5">fitness goal for today?</text>
+
+  <!-- user bubble -->
+  <rect x="573" y="276" width="186" height="40" rx="16" fill="#7c5cf0"/>
+  <text x="591" y="301" fill="#ffffff" font-size="11.5">Yes, let's set it up</text>
+
+  <!-- AI bubble 2 -->
+  <rect x="513" y="328" width="210" height="58" rx="16" fill="#241b40"/>
+  <text x="527" y="352" fill="#cdd6ec" font-size="11.5">Done! New goal created:</text>
+  <text x="527" y="370" fill="#8fe6d5" font-size="11.5" font-weight="600">Run 3x / week · 30 days</text>
+
+  <!-- goal mini card -->
+  <rect x="513" y="400" width="246" height="60" rx="14" fill="#13233f" stroke="#2a7f6d"/>
+  <circle cx="539" cy="430" r="13" fill="#1f6f52"/>
+  <path d="M533 430 l4 5 l8 -9" stroke="#7ff0c0" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="562" y="424" fill="#eaf2ff" font-size="12" font-weight="600">Goal added · Fitness</text>
+  <rect x="562" y="436" width="176" height="7" rx="3.5" fill="#20304d"/>
+  <rect x="562" y="436" width="70" height="7" rx="3.5" fill="url(#brand)"/>
+
+  <!-- input bar -->
+  <rect x="505" y="612" width="228" height="40" rx="20" fill="#1a1533" stroke="#322a5c"/>
+  <text x="524" y="637" fill="#6b7fa0" font-size="12">Message Evana…</text>
+  <circle cx="750" cy="632" r="18" fill="url(#brand)"/>
+  <path d="M743 632 h13 M750 626 l7 6 l-7 6" stroke="#0a1024" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ===== Right feature cards ===== -->
+  <!-- Goal progress -->
+  <rect x="828" y="118" width="356" height="176" rx="20" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.12"/>
+  <text x="854" y="152" fill="#93a4c4" font-size="12" letter-spacing="1.5">GOAL PROGRESS</text>
+  <circle cx="906" cy="222" r="42" fill="none" stroke="#2a2450" stroke-width="10"/>
+  <circle cx="906" cy="222" r="42" fill="none" stroke="url(#brand)" stroke-width="10" stroke-linecap="round" stroke-dasharray="179 264" transform="rotate(-90 906 222)"/>
+  <text x="906" y="229" fill="#ffffff" font-size="20" font-weight="700" text-anchor="middle">68%</text>
+  <text x="972" y="214" fill="#ffffff" font-size="16" font-weight="600">Fitness Journey</text>
+  <text x="972" y="238" fill="#93a4c4" font-size="13">Target · 30 days</text>
+  <text x="972" y="262" fill="#8fe6d5" font-size="13" font-weight="600">On track</text>
+
+  <!-- Habit streak -->
+  <rect x="828" y="310" width="356" height="150" rx="20" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.12"/>
+  <text x="854" y="344" fill="#93a4c4" font-size="12" letter-spacing="1.5">HABIT STREAK</text>
+  <text x="854" y="392" fill="#ffffff" font-size="34" font-weight="800">12</text>
+  <text x="906" y="392" fill="#a78bfa" font-size="15" font-weight="600">day streak</text>
+  <path d="M1150 342 q10 12 0 22 q-8 8 -14 0 q-2 -8 6 -12 q-4 10 4 12 q8 -2 4 -14 z" fill="#f6a94b"/>
+  <g>
+    <rect x="854" y="416" width="34" height="22" rx="6" fill="url(#brand)"/>
+    <rect x="896" y="416" width="34" height="22" rx="6" fill="url(#brand)"/>
+    <rect x="938" y="416" width="34" height="22" rx="6" fill="url(#brand)"/>
+    <rect x="980" y="416" width="34" height="22" rx="6" fill="url(#brand)"/>
+    <rect x="1022" y="416" width="34" height="22" rx="6" fill="url(#brand)"/>
+    <rect x="1064" y="416" width="34" height="22" rx="6" fill="#2a2450"/>
+    <rect x="1106" y="416" width="34" height="22" rx="6" fill="#2a2450"/>
+  </g>
+
+  <!-- Mood baseline -->
+  <rect x="828" y="476" width="356" height="150" rx="20" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.12"/>
+  <text x="854" y="510" fill="#93a4c4" font-size="12" letter-spacing="1.5">MOOD THIS WEEK</text>
+  <text x="1100" y="510" fill="#6fe0c8" font-size="14" font-weight="700">+18% ↑</text>
+  <polyline points="858,588 906,570 954,578 1002,548 1050,556 1098,524 1146,532"
+            fill="none" stroke="url(#brand)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#2dd4bf">
+    <circle cx="858" cy="588" r="4"/><circle cx="906" cy="570" r="4"/><circle cx="954" cy="578" r="4"/>
+    <circle cx="1002" cy="548" r="4"/><circle cx="1050" cy="556" r="4"/><circle cx="1098" cy="524" r="4"/><circle cx="1146" cy="532" r="4"/>
+  </g>
+</svg>

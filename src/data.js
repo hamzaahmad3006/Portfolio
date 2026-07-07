@@ -18,6 +18,8 @@ import Work8 from './assets/project-8.png';
 import Work9 from './assets/project-9.png';
 import Work10 from './assets/project-10.png';
 import RadiologyAI from './assets/radiology-ai.svg';
+import EvanaAI from './assets/evana-ai.svg';
+import RestaurantVoiceAI from './assets/restaurant-voice-ai.svg';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -330,6 +332,32 @@ export const portfolio = [
     description:
       'An AI medical-imaging platform that analyses chest X-rays to detect abnormalities, produces confidence-scored disease predictions with heatmaps, and explains findings through a conversational AI assistant.',
     tags: ['Next.js', 'FastAPI', 'PyTorch', 'Python', 'Groq LLM', 'Tailwind'],
+    link: null,
+    repo: null,
+  },
+  {
+    id: 12,
+    img: EvanaAI,
+    title: 'Evana — AI Life Coach',
+    type: 'AI Mobile App',
+    categories: ['ai', 'mobile'],
+    featured: true,
+    description:
+      'A conversation-first AI life-coaching app where users chat with a personalised coach to set goals, build habits, and journal daily reflections — with mood sentiment analysis and AI growth narratives.',
+    tags: ['React Native', 'Expo', 'FastAPI', 'Supabase', 'Groq LLM', 'Redux'],
+    link: null,
+    repo: null,
+  },
+  {
+    id: 13,
+    img: RestaurantVoiceAI,
+    title: 'AI Restaurant Voice Assistant',
+    type: 'AI Voice Platform',
+    categories: ['ai', 'web'],
+    featured: true,
+    description:
+      'A voice-first restaurant automation platform where customers order and ask questions over real-time voice, while operators control the AI live from a glassmorphic dashboard — powered by a LangGraph state machine and LiveKit WebRTC.',
+    tags: ['LangGraph', 'LiveKit', 'Groq', 'Deepgram', 'ElevenLabs', 'FastAPI', 'React'],
     link: null,
     repo: null,
   },
