@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import {
   FaEnvelopeOpen,
-  FaFacebookF,
   FaGithub,
   FaLinkedinIn,
   FaPhoneSquareAlt,
 } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
 import { FiSend } from 'react-icons/fi';
 
 // The Web3Forms access key is read from .env.local (REACT_APP_WEB3FORMS_KEY),
@@ -18,8 +16,6 @@ export default function Contact() {
   const [feedback, setFeedback] = useState('');
 
   const socialLinks = [
-    { Icon: FaFacebookF, href: 'https://www.facebook.com/' },
-    { Icon: FaXTwitter, href: 'https://twitter.com/' },
     { Icon: FaLinkedinIn, href: 'https://www.linkedin.com/in/hamza-ahmad-6aab63337/' },
     { Icon: FaGithub, href: 'https://github.com/hamzaahmad3006' },
   ];

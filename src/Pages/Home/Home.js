@@ -75,7 +75,7 @@ export default function Home() {
               <span className="text-[32px] lg:text-[45px] font-bold text-first-color tracking-tight">{displayedText}<span className="animate-blink font-thin text-first-color">|</span></span>
             </h1>
             <p className="leading-[1.6] lg:leading-[2.125] my-6 lg:mb-10 lg:mt-6 text-text-color lg:text-[17px] font-medium animate-fadeInUp opacity-0 [animation-delay:400ms]">
-              Hi, I'm a professionally trained MERN Stack developer passionate about building responsive, user-friendly web applications. I specialize in creating seamless front-end experiences and robust back-end solutions.
+              I'm a Full-Stack &amp; React Native developer who builds fast, polished web and mobile apps — and increasingly, AI-powered products. From MERN dashboards to LLM-driven assistants with real-time voice, I turn ideas into production-ready experiences.
             </p>
             {/* Tech stack chips */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-8 animate-fadeInUp opacity-0 [animation-delay:500ms]">
