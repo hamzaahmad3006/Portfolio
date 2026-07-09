@@ -68,7 +68,7 @@ export default function Home() {
           <img src={Profile} alt="Profile" className="w-full h-full object-cover object-top" />
         </div>
 
-        <div className="home_content lg:pl-10">
+        <div className="lg:pl-10">
           <div className="max-w-[600px] mx-auto lg:mx-0 pt-[20px] text-center lg:text-left">
             <h1 className="relative text-[36px] lg:text-[52px] lg:pl-[70px] leading-[1.24] font-extrabold text-[#2c3e50] dark:text-white before:hidden lg:before:block before:content-[''] before:absolute before:left-0 before:top-[22%] before:w-12 before:h-1.5 before:rounded-full before:bg-first-color animate-fadeInLeft opacity-0 [animation-delay:200ms]">
               <span className="tracking-tight">I'm Hamza Ahmad.</span><br />
